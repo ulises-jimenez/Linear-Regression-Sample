@@ -27,7 +27,7 @@ print fitted.summary()
 rse = fitted.mse_resid*.5 #Residual Standard Error
 print 'RSE is %.4f' %rse
 
-def model(feature, test, labelforx, labelfory, graphname): #only works for simple regression i.e. one feature
+def model(feature, test, labelforx, labelfory, graphname): #only works for simple regression i.e. one feature, plots feature against fitted values
 	plt.plot(feature, test, 'ro')
 	plt.plot(feature, fitted.fittedvalues, 'b')
 	plt.legend(['Data', 'Model Prediction'])
