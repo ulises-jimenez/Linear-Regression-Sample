@@ -14,7 +14,8 @@ import patsy
 advertising = pd.read_csv('Advertising.csv')
 del(advertising['Unnamed: 0'])
 
-y, X = patsy.dmatrices('Sales ~ TV + Radio', data = advertising, return_type='dataframe')
+y, X = patsy.dmatrices('Sales ~ TV + Radio', data = advertising, return_type='dataframe') #use this matrix builder to apply transformations and interaction terms
+
 
 Xwithones = sm.add_constant(X) #In case you want to add the arrays manually to the OLS model
 
