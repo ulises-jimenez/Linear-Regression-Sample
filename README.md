@@ -1,4 +1,4 @@
-Stats-and-Machine-Learning
+Linear-Regression
 ==========================
 
-Scripts for various statistical projects
+Script for Linear-Regression project
